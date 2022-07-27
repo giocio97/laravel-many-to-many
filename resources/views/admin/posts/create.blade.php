@@ -55,7 +55,7 @@
             <legend>Tags</legend>
             @foreach ($tags as $tag)
                 <div class="form-check">
-                    {{-- ricordarsi di aggiungere [] al name per avere un array come valore di ritorno --}}
+
                     <input
                         class="form-check-input"
                         type="checkbox"
@@ -68,7 +68,7 @@
                 </div>
             @endforeach
 
-            {{-- TODO: l'errore non si vede --}}
+
             @error('tags')
                 <div class="invalid-feedback">
                     {{ $message }}
